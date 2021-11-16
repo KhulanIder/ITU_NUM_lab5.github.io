@@ -1,0 +1,66 @@
+<i-- Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ ></i-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хаалга олох</title>
+</head>
+    <body>
+        <script>
+            var bairniiDavhar = 9;
+            var bairniiOrts = 3;
+            var bairniiAil = 4;
+            var toot = window.prompt("Haalganii dugaar oruulna uu?");
+            var davhar = 1;
+            var orts = 1;
+            var haalga = 1;
+            var i = 1;
+
+            // if (toot <= bairniiAil){
+            //     alert(`orts: ${orts}, davhar: ${davhar}, haalga: ${toot}`);
+            // } else {
+            //     while (i <= toot){
+            //         if (haalga < bairniiAil){
+            //             haalga++;
+            //             console.log(haalga)
+            //         } else if (davhar <= bairniiDavhar){
+            //             davhar++;
+            //             haalga = 1;
+            //         } else if (orts <= bairniiOrts){
+            //             orts++;
+            //             davhar = 1;
+            //             haalga = 1;
+            //         }
+            //         i++;
+            //     }
+            //     alert(`orts: ${orts}, davhar: ${davhar}, haalga: ${haalga}`);
+            // }
+            while (i < toot){
+                    if (haalga < bairniiAil){
+                        haalga++;
+                        console.log(haalga)
+                    } else if (davhar < bairniiDavhar){
+                        davhar++;
+                        haalga = 1;
+                    } else if (orts < bairniiOrts){
+                        orts++;
+                        davhar = 1;
+                        haalga = 1;
+                    }
+                    i++;
+            }
+            if (toot == 0){
+                alert("¯\\_( ͡❛ ͜ʖ ͡❛)_/¯");
+            } else if (toot > 108){
+                alert("¯\\_( ❛︠ ͜ʖ ︡❛)_/¯");
+            } else if (toot < 0){
+                alert("(ㆆ_ㆆ)");
+            } else {
+                alert(`orts: ${orts}, davhar: ${davhar}, haalga: ${haalga}`);
+            }
+        </script>
+    </body>
+</html>

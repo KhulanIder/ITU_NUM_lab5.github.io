@@ -1,0 +1,27 @@
+<i--  Гараас өгсөн тооны цифрүүдийн нийлбэрийг ол ></i-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Хүссэн цифрүүдийн чинь нийлбэрийг олъё!</title>
+    </head>
+    <body>
+        <script>
+            var numString = String(window.prompt("Цифрээ оруулна уу?"));
+            var num = parseInt(numString)
+            var sum = 0;
+            // while (parseInt(numString) > 0){
+            //     sum += parseInt(numString) % 10; 
+            //     numString = parseInt((numString - numString % 10) / 10); 
+            // }
+            // alert(sum);
+            for(var i = 0; i < numString.length; i++){
+                sum += parseInt(numString[i])
+            }
+            alert(sum)
+        </script>
+    </body>
+</html>

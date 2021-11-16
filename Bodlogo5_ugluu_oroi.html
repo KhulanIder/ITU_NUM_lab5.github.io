@@ -1,0 +1,54 @@
+<i-- Вэб сайтруу өглөө ороход ногоон дөрвөлжин дүрсийг зүүн дээд буланд, орой ороход улаан дөрвөлжин дүрсийг баруун доод буланд харагдуул.  ></i-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өглөө, оройн дөрвөлжин</title>
+        <style>
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            .green {
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: auto;
+                right: auto;
+                background-color: rgb(0, 255, 0);
+                border: 10px solid rgb(32, 138, 0);
+                border-radius: 5px;
+            }
+            .red {
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: auto;
+                top: auto;
+                background-color: rgb(255, 0, 0);
+                border: 10px solid rgb(92, 13, 13);
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var date = new Date();
+            var hour = date.getHours();
+            var block = document.createElement("div");
+            if (hour < 18) {
+                block.classList.add("green");
+            } else {
+                block.classList.add("red");
+            }
+            document.body.appendChild(block);
+        </script>
+    </body>
+</html>

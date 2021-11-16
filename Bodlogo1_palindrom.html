@@ -1,0 +1,33 @@
+<i-- Вэб сайтад орсон хүний нэрийг асуугаад нэр нь палиндром мөн эсэхийг шалга. ></i-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Нэр чинь палиндром эсэхийг шалгацгаая!</title>
+    </head>
+    <body>
+        <script>
+            var name = window.prompt("Таны нэр хэн бэ?"); // name = 'Bataa' name = "Murun"
+            var palindrome = ""; // palindrome = "dnahk" palindrome = "Naran"
+            for (var i = name.length - 1; i >= 0; i--){ // i = -1
+                palindrome += name[i].toLowerCase(); // i = 4 name[3] = "n" tolowercase
+            }
+            if (name.toLowerCase() == palindrome){ // name.toLowerCase() = "naran" == "naran" = true khand == dnahk = false
+                if (name.length == 1){
+                    alert("Palindrom биш юм байна");
+                } else {
+                    alert("Palindrom мөн байна");
+                }
+            } else {
+                alert("Palindrom биш юм байна");
+            };
+        </script>
+    </body>
+</html>
+
+
+  
+  

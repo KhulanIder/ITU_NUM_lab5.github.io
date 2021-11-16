@@ -1,0 +1,20 @@
+<i-- Вэб сайтад орсон хүний нэрийг асуугаад нэр нь палиндром мөн эсэхийг шалга. ></i-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чоно, туулайтай бодлого</title>
+</head>
+<body>
+    <script>
+        var zai = window.prompt("Зайг оруулна уу?");
+        var tsag = (zai / 7).toFixed(2);
+        var minute = (tsag * 60).toFixed(2);
+        var seconds = (minute - Math.floor(minute)) * 60;
+        alert(Math.floor(minute) + " minute " + seconds.toFixed(2) % 100 + " seconds");
+    </script>
+</body>
+</html>
